@@ -11,10 +11,19 @@ html, body {
     padding: 0;
 }
 
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    object-fit: cover;
+}
+
 #main-top-container {
     width: 100%;
     height: 50vh;
-    background-color: #808080;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -95,7 +104,6 @@ html, body {
 }
 
 #second-top-sub-container {
-    background-color: #ffffff80;
     height: 35%;
     display: flex;
     justify-content: space-around;
@@ -113,6 +121,7 @@ html, body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid;
 }
 
 .top-second-left-sub-content {
@@ -148,7 +157,7 @@ html, body {
 }
 
 #top-second-left-third-container {
-    background-color: #bfbfbf;
+    background-color: #808080;
     height: 25%;
     display: flex;
     align-items: center;
