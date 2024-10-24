@@ -199,7 +199,7 @@ html, body {
     height: 25%;
     display: flex;
     align-items: center;
-    border: 0.75px solid #808080;
+    border: 1px solid #808080;
     border-radius: 7.5px;
 }
 
@@ -259,6 +259,7 @@ html, body {
     border: 0;
     border-radius: 7.5px;
     box-shadow: 1.25px 1.5px #808080;
+    font-family: serif;
     transition: background-color 0.3s, transform 0.125s;
 }
 
