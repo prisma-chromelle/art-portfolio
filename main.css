@@ -128,6 +128,7 @@ html, body {
 
 #nickname {
     margin: 0;
+    font-size: 1.25em;
 }
 
 #top-second-left-second-container {
@@ -143,6 +144,7 @@ html, body {
 
 #bio {
     text-align: center;
+    color: #fff;
 }
 
 #top-second-left-third-container {
@@ -171,19 +173,26 @@ html, body {
 }
 
 #top-second-right-top-container {
-    height: 40%;
+    height: 25%;
     display: flex;
     align-items: center;
 }
 
+#music-txt {
+    font-size: 0.375em;
+}
+
+#music-txt:hover {
+    cursor: pointer;
+}
+
 #top-second-right-bottom-container {
-    height: 50%;
+    height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid;
 }
 
 .top-second-right-bottom-content {
