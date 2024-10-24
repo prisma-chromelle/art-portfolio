@@ -199,7 +199,8 @@ html, body {
     height: 25%;
     display: flex;
     align-items: center;
-    border: 1px solid #808080;
+    border: 0.75px solid #808080;
+    border-radius: 7.5px;
 }
 
 #music-txt {
@@ -244,6 +245,7 @@ html, body {
 }
 
 #third-top-sub-container {
+    width: 85%;
     height: 15%;
     display: flex;
     flex-direction: row;
@@ -255,8 +257,8 @@ html, body {
     height: 80%;
     background-color: #fff;
     border: 0;
+    border-radius: 7.5px;
     box-shadow: 1.25px 1.5px #808080;
-    font-family: serif;
     transition: background-color 0.3s, transform 0.125s;
 }
 
@@ -276,5 +278,5 @@ html, body {
 #main-bottom-container {
     width: 100%;
     height: 75vh;
-    background-color: #0f0;
+    background-color: #808080;
 }
