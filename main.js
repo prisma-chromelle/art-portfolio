@@ -21,15 +21,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //user accessibility: screen sniping
 document.addEventListener('keydown', function(event) {
-    if (event.shiftKey && event.key === 'S' && event.metaKey) {
-        document.querySelectorAll("*").forEach(function(element) {
-            element.style.display = "hidden";
+    if (event.key === 'S' && event.shiftKey && (event.ctrlKey || event.metaKey)) {
+        document.querySelectorAll("*").forEach(function(element) { 
+            element.style.display = "none";
         });
     }
 });
 
-//music player
+//user accessibility: zooming
+// user accessibility: zooming: double-tap
+    document.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+            event.preventDefault(); // Prevents multi-touch gestures
+        }
+    }, { passive: false });
 
+// user accessibility: zooming: keyboard or other methods
+    document.addEventListener('gesturestart', function (event) {
+        event.preventDefault();
+    });
+
+    document.addEventListener('gesturechange', function (event) {
+        event.preventDefault();
+    });
+
+    document.addEventListener('gestureend', function (event) {
+        event.preventDefault();
+    });
+
+//music player
 const musicTxt = document.getElementById("music-txt");
 const audio = document.getElementById("audio");
 let isPlaying = false;
