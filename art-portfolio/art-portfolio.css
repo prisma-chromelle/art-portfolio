@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main-top-container {
+    width: 100%;
+    height: 50vh;
+    background-color: #808080;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-sub-container {
+    width: 90%;
+}
+
+#first-top-sub-container{
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.first-top-sub-content {
+    height: 90%;
+}
+
+#profile-pic-container {
+    width : 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#profile-pic {
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+
+#socmed-info-container {
+    background-color: #fff;
+    width : 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socmed-info-content-container {
+    width: 90%;
+}
+
+#socmed-info-content-container-top {
+    height: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+#username {
+    margin: 0;
+    font-size: 3.125em;
+    width: 100%;
+}
+
+#socmed-info-content-container-bottom {
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.count-containers {
+    width: 30%;
+    height: 90%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.count-text {
+    font-size: 1.85em;
+}
+
+#second-top-sub-container{
+    background-color: #ffffff80;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.second-top-sub-content {
+    height: 90%;
+}
+
+#top-second-left-sub-container {
+    width : 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-second-left-sub-content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+#top-second-left-first-container {
+    height: 40%;
+}
+
+#nickname {
+    margin: 0;
+    font-size: 5.75em;
+}
+
+#top-second-left-second-container {
+    height: 25%;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+}
+
+#occupation, #bio {
+    font-size: 1.25em;
+}
+
+#bio {
+    text-align: center;
+}
+
+#top-second-left-third-container {
+    background-color: #bfbfbf;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#top-second-right-sub-container {
+    width : 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-second-left-sub-content {
+    width: 90%;
+}
+
+.top-second-right-content {
+    width: 90%;
+}
+
+#top-second-right-top-container {
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#top-second-right-bottom-container {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.top-second-right-bottom-content {
+    width: 90%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-second-right-bottom-first-content {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+#third-top-sub-container{
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-third-content {
+    height: 80%;
+    font-size: 2.5em;
+}
+
+#follow-btn {
+    width: 40%;
+}
+
+#commission-form-btn {
+    width: 50%;
+}
+
+#main-bottom-container {
+    width: 100%;
+    height: 75vh;
+    background-color: #0f0;
+}
