@@ -286,3 +286,10 @@ html, body {
     height: 75vh;
     background-color: #808080;
 }
+
+.redundant_data {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -15;
+}
