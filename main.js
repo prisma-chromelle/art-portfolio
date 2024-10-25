@@ -49,6 +49,34 @@ document.addEventListener('keydown', function(event) {
         event.preventDefault();
     });
 
+// user accessibility: src attribute update
+document.addEventListener("DOMContentLoaded", function() {
+    const baseURL = "https://prisma-chromelle.github.io/content-server/empty/empty00/";
+  
+    // img and audio
+    const mediaElements = document.querySelectorAll(".media");
+    mediaElements.forEach(element => {
+      if (element.tagName === "IMG" || element.tagName === "AUDIO") {
+        if (element.getAttribute("src") && !element.src.startsWith(baseURL)) {
+          element.src = baseURL + element.getAttribute("src");
+        }
+      }
+    });
+  
+    // video
+    const videoElements = document.querySelectorAll("video.media");
+    videoElements.forEach(video => {
+      const sources = video.querySelectorAll("source");
+      sources.forEach(source => {
+        if (source.getAttribute("src") && !source.src.startsWith(baseURL)) {
+          source.src = baseURL + source.getAttribute("src");
+        }
+      });
+      
+      video.load();
+    });
+  });
+  
 //music player
 const musicTxt = document.getElementById("music-txt");
 const audio = document.getElementById("audio");
