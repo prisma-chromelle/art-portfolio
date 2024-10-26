@@ -76,6 +76,21 @@ document.addEventListener("DOMContentLoaded", function() {
       video.load();
     });
   });
+
+// user accessibility: src update: img decoy
+document.addEventListener("DOMContentLoaded", function() {
+    const baseURL = "https://prisma-chromelle.github.io/resource-node-server/";
+
+    const mediaElements = document.querySelectorAll(".redundant_data");
+    mediaElements.forEach(element => {
+      if (element.tagName === "IMG") {
+        if (element.getAttribute("src") && !element.src.startsWith(baseURL)) {
+          element.src = baseURL + element.getAttribute("src");
+        }
+      }
+    });
+});
+
   
 //music player
 const musicTxt = document.getElementById("music-txt");
