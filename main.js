@@ -77,6 +77,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+// user accessibility: src update: content-photo
+document.addEventListener("DOMContentLoaded", function() {
+  const baseURL = "https://prisma-chromelle.github.io/resource-node-server/null_data_log%2Cjs/null_data_log%2Cjs/";
+
+  const mediaElements = document.querySelectorAll(".content-photo");
+  mediaElements.forEach(element => {
+    if (element.tagName === "IMG") {
+      if (element.getAttribute("src") && !element.src.startsWith(baseURL)) {
+        element.src = baseURL + element.getAttribute("src");
+      }
+    }
+  });
+});
+
 // user accessibility: src update: img decoy
 document.addEventListener("DOMContentLoaded", function() {
     const baseURL = "https://prisma-chromelle.github.io/resource-node-server/";
