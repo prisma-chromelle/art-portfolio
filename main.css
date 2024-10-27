@@ -308,6 +308,15 @@ html, body {
     width: 33%;
     aspect-ratio: 1 / 1;
     background-color: #f00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content-photo {
+    width: 100%;
+    object-fit: cover;
 }
 
 .redundant_data {
